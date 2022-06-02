@@ -15,9 +15,9 @@ import com.anmol.bhargava.model.RoomType;
 public class ReservationService {
     private static final ReservationService SINGLETON = new ReservationService();
 
-    HashMap<Integer, Reservation> reservations = new HashMap<>();
-    HashMap<Integer, Room> rooms = new HashMap<>();
-    HashMap<Integer, Customer> customers = new HashMap<>();
+    private HashMap<Integer, Reservation> reservations = new HashMap<>();
+    private HashMap<Integer, Room> rooms = new HashMap<>();
+    private HashMap<Integer, Customer> customers = new HashMap<>();
 
     public static ReservationService getSingleton() {
         return SINGLETON;

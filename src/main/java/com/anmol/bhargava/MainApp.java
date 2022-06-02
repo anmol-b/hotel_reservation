@@ -16,14 +16,14 @@ import com.anmol.bhargava.service.ReservationService;
 
 public class MainApp {
 
-    static final Scanner in = new Scanner(System.in);
-    static ReservationService reservationService = ReservationService.getSingleton();
+    private static final Scanner in = new Scanner(System.in);
+    private static ReservationService reservationService = ReservationService.getSingleton();
     private final static Calendar cal = Calendar.getInstance();
     
 
     public static void printOptions(){
         System.out.println("--------------------------------------------------------------------------------------\n"
-                            + "Hote Reservation System v1.0.0\n"
+                            + "Hotel Reservation System v1.0.0\n"
                             + "Welcome, please select an action (enter number displayed against the action):\n"
                             + "1. Check Availability for a room type\n"
                             + "2. Book a room\n"
